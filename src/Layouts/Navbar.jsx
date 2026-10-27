@@ -9,8 +9,8 @@ import NavLinks from "../Components/Menu";
 export default function Navbar() {
     
  const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/About" },
+  { label: "Contact", href: "/Contact" },
  ];
 
   const [open, setOpen] = useState(false);
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Menu desktop (md ke atas) */}
         <div className="mr-8 hidden items-center gap-6 text-[15px] font-semibold md:flex">
           <NavLinks links={navLinks} />
-          <Button href="/scan" size="sm">
+          <Button href="/Scanning-CV" size="sm">
             Scan CV
           </Button>
         </div>
