@@ -13,7 +13,7 @@ const ScanningCV = () => {
         <Layout>
            <ScanPage/>
            <FaqSection/>
-            <Footer/>
+           <Footer/>
         </Layout>
     );
 }
