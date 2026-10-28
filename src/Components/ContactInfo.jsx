@@ -2,9 +2,9 @@ import { FiMail, FiInstagram, FiLinkedin, FiInfo } from "react-icons/fi";
 
 // Ganti dengan kontak asli kamu
 const contacts = [
-  { icon: FiMail, label: "Email", value: "[email@kamu.com]", href: "mailto:email@kamu.com" },
-  { icon: FiInstagram, label: "Instagram", value: "[@username]", href: "#" },
-  { icon: FiLinkedin, label: "LinkedIn", value: "[nama-profil]", href: "#" },
+  { icon: FiMail, label: "Email", value: "[raffialbar135@gmail.com]", href: "mailto:email@kamu.com" },
+  { icon: FiInstagram, label: "Instagram", value: "[@raffy_samaa]", href: "#" },
+  { icon: FiLinkedin, label: "LinkedIn", value: "[mohammadraffyalbar]", href: "#" },
 ];
 
 export default function ContactInfo() {

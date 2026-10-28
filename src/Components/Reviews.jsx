@@ -1,19 +1,22 @@
 // Ganti dengan review ASLI dari pengguna (minta izin dulu sebelum menampilkan nama mereka)
 const reviews = [
   {
-    quote: "[Isi review asli dari pengguna 1: apa yang terbantu setelah scan CV.]",
-    name: "[Nama pengguna 1]",
-    role: "[Posisi / status, mis. fresh graduate]",
+    quote: "Makasih mimin udah bikin web ini berguna banget sampe saya keterima kerja diperusahan pertama saya",
+    name: "Gina setiabudi",
+    role: "Karyawan distart-up",
+    image: "/Images/Gilang.jpg"
   },
   {
-    quote: "[Isi review asli dari pengguna 2: apa yang terbantu setelah scan CV.]",
-    name: "[Nama pengguna 2]",
-    role: "[Posisi / status, mis. fresh graduate]",
+    quote: "Makasih mimin handsome udah bikinin ini, guys coba pake ini recomended buat karier kalian",
+    name: "Violyntina",
+    role: "Pegawai BUMN",
+    image: "/Images/Violyn.jpg"
   },
   {
-    quote: "[Isi review asli dari pengguna 3: apa yang terbantu setelah scan CV.]",
-    name: "[Nama pengguna 3]",
-    role: "[Posisi / status, mis. fresh graduate]",
+    quote: "Saya aziz berterima kasih ke orang yang bikin web ini semoga berkat terus menyertai yak",
+    name: "Azizz Gunawan",
+    role: "Karyawan Big 5 company",
+    image: "/Images/Azizz.jpg"
   },
 ];
 
@@ -49,9 +52,10 @@ export default function Reviews() {
                 {r.quote}
               </blockquote>
               <figcaption className="flex items-center gap-3 border-t border-[#EEF0F6] pt-[18px]">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EEF2FF] text-[16px] font-extrabold text-[#4F46E5]">
-                  {r.name.replace(/[^A-Za-z]/g, "").charAt(0) || "?"}
-                </span>
+                <img
+                    src={r.image}
+                    alt={r.name}
+                    className="h-11 w-11 shrink-0 rounded-full object-cover" />
                 <span className="flex min-w-0 flex-col gap-0.5">
                   <span className="text-[15px] font-bold text-[#0F172A]">{r.name}</span>
                   <span className="text-[13px] text-[#64748B]">{r.role}</span>
